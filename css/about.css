@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    position: relative;
+}
+html{
+	scroll-behavior: smooth;
+}
+.nav {
+    position: relative;
+    width: auto;
+    display: inline-block;
+    border: none;
+    float: right;
+    z-index: 99999;
+}
+.navbar-fixed-top {
+    padding-top: 10px;
+}
+.navbar-brand {
+    padding-top: 25px;
+}
+.navbar-brand > img {
+    max-width: 127px;
+    z-index: 9999;
+}
+a,
+a:link {
+    color: #666;
+}
+a:hover,
+a:focus,
+a:visited {
+    color: #666;
+    text-decoration: none;
+}
+
+.vcenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+.fill {
+    height: 100vh;
+}
+.margin-top-05 {
+    margin-top: 0.5em;
+}
+.margin-top-10 {
+    margin-top: 1.0em;
+}
+.margin-top-15 {
+    margin-top: 1.5em;
+}
+.margin-top-20 {
+    margin-top: 2.0em;
+}
+.margin-top-25 {
+    margin-top: 2.5em;
+}
+.margin-top-30 {
+    margin-top: 3.0em;
+}
+.margin-top-35 {
+    margin-top: 3.5em;
+}
+.margin-top-40 {
+    margin-top: 4.0em;
+}
+.margin-top-45 {
+    margin-top: 4.5em;
+}
+@media (max-width: 768px) {
+    .navbar-brand {
+        padding-left: 0px;
+    }
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-default.color-fill {
+    background-color: #fff;
+    border-color: transparent;
+}
+.btn-nav {
+    background: transparent;
+    border: none;
+    padding: 15px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    z-index: 99999;
+}
+@media (max-width: 768px) {
+    .btn-nav {
+        padding: 15px 0;
+    }
+}
+.btn-nav:focus {
+    outline: 0;
+}
+.icon-bar {
+    display: block;
+    margin: 6px 0;
+    width: 30px;
+    height: 3px;
+    background-color: #222;
+}
+.icon-bar.inverted {
+    background-color: #fff;
+}
+@media (max-width: 992px) {
+    .icon-bar.inverted {
+        background-color: #222;
+    }
+}
+.opaque {
+    background-color: #fff!important;
+}
+.btn-nav:hover .icon-bar {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    background-color: #555;
+}
+.nav-content {
+    position: fixed;
+    top: -100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1);
+    display: block;
+    height: 100%;
+    z-index: 9;
+}
+.nav-list {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+.item-anchor {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+}
+.item-anchor:hover,
+.item-anchor:focus {
+    color: #ffffff;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.item-anchor:hover:after,
+.item-anchor:focus:after {
+    width: 100%;
+    background: #f7f7f7;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.nav-item {
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px auto;
+    text-align: center;
+    color: #222;
+}
+.nav-item a:link,
+.nav-item a:hover,
+.nav-item a:focus {
+    color: #222;
+}
+.nav-item a:hover,
+.nav-item a:focus {
+    border-bottom: 2px solid #222;
+}
+.animated {
+    display: block;
+    margin: 0 auto;
+}
+.animated:hover .icon-bar,
+.animated:focus .icon-bar {
+    background-color: #fff;
+}
+.animated:focus {
+    cursor: pointer;
+    z-index: 9999;
+}
+.middle {
+    margin: 0 auto;
+}
+.icon-bar {
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+    z-index: 999999;
+}
+.animated .icon-bar {
+    z-index: 999999;
+    background-color: #222!important;
+}
+.animated .top {
+    -webkit-transform: translateY(7px) rotateZ(45deg);
+    -moz-transform: translateY(7px) rotateZ(45deg);
+    -ms-transform: translateY(7px) rotateZ(45deg);
+    -o-transform: translateY(7px) rotateZ(45deg);
+    transform: translateY(7px) rotateZ(45deg);
+}
+.animated .bottom {
+    -webkit-transform: translateY(-11px) rotateZ(-45deg);
+    -moz-transform: translateY(-11px) rotateZ(-45deg);
+    -ms-transform: translateY(-11px) rotateZ(-45deg);
+    -o-transform: translateY(-11px) rotateZ(-45deg);
+    transform: translateY(-11px) rotateZ(-45deg);
+}
+.animated .middle {
+    width: 0;
+}
+@keyframes showNav {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+@-webkit-keyframes showNav {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+@-moz-keyframes showNav {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+@-o-keyframes showNav {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+.showNav {
+    -webkit-animation: showNav 1s ease forwards;
+    -moz-animation: showNav 1s ease forwards;
+    -o-animation: showNav 1s ease forwards;
+    animation: showNav 1s ease forwards;
+}
+@keyframes hideNav {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100%;
+    }
+}
+@-webkit-keyframes hideNav {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100%;
+    }
+}
+@-moz-keyframes hideNav {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100%;
+    }
+}
+@-o-keyframes hideNav {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100%;
+    }
+}
+.hideNav {
+    -webkit-animation: hideNav 1s ease forwards;
+    -moz-animation: hideNav 1s ease forwards;
+    -o-animation: hideNav 1s ease forwards;
+    animation: hideNav 1s ease forwards;
+}
+.hidden {
+    display: none;
+}
+
+/*---------- Menu Icon Animation ----------*/
+
+.navbar-toggle * {
+    -ms-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.navbar-toggle {
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    padding: 16px;
+    width: 50px;
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #fff;
+}
+.navbar-toggle span {
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #222;
+    display: block;
+}
+.navbar-toggle span.bar1 {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -ms-transform-origin: 1px 3px;
+    -webkit-transform-origin: 1px 3px;
+    -moz-transform-origin: 1px 3px;
+    -o-transform-origin: 1px 3px;
+    transform-origin: 1px 3px;
+    width: 31px;
+}
+.navbar-toggle span.bar2 {
+    -ms-transform: rotate(-360deg) scale(0);
+    -webkit-transform: rotate(-360deg) scale(0);
+    -moz-transform: rotate(-360deg) scale(0);
+    -o-transform: rotate(-360deg) scale(0);
+    transform: rotate(-360deg) scale(0);
+}
+.navbar-toggle span.bar3 {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -ms-transform-origin: 8px 2px;
+    -webkit-transform-origin: 8px 2px;
+    transform-origin: 8px 2px;
+    width: 31px;
+}
+.navbar-toggle.collapsed span.bar1,
+.navbar-toggle.collapsed span.bar2,
+.navbar-toggle.collapsed span.bar3,
+.navbar-toggle.collapsed span.bar4 {
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+    width: 30px;
+}
+
+.slide1{
+    width: 100%;
+  	height: 100vh;
+}
+.slide1 img{
+    display:flex; 
+    top: 0;
+	left: 0;
+	width: 100%;
+	height: 85%;
+	padding: 0px 7%;
+	position: absolute;
+	object-fit: cover;
+}
+section{
+    position: relative;
+    overflow: hidden;
+	top: 78%;
+}
+
+section .scroll{
+    width: 100%;
+    display: flex;
+}
+
+section .scroll div{
+    color: #000;
+    font-size: 3em;
+    white-space: nowrap;
+    font-weight: 800;
+    text-transform: uppercase;
+    animation: animate 40s linear infinite;
+    animation-delay: -40s;
+}
+
+section .scroll div:nth-child(2){
+    animation: animate2 40s linear infinite;
+    animation-delay: -20s;
+}
+
+section .scroll div span{
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+.slide2{
+    width: 100%;
+  	height: auto;
+    position: relative;
+	padding-left: 22%;
+}
+.slide2 img{
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 70%;
+    height: 70%;
+    pointer-events: none;
+    display: flex;
+	padding-bottom: 5%;
+}
+.slide3{
+    padding-left: 100px;
+    padding-right: 100px;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+}
+
+@media screen and (max-width: 425px){
+	.slide3{
+		font-size: 12px;
+        text-align: left;
+	}
+}
+@media screen and (max-width: 700px){
+	section .scroll div{
+		font-size: 2em;
+	}
+	.slide3{
+		font-size: 19px;
+	}
+	
+}
+
+.slide4{
+	text-align: center;
+	padding: 5% 0 5% 0;
+	font-size: 48px;
+}
+
+footer{
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	background: #fff;
+	border: 2px solid #000000; 
+  }
+  .main-content{
+	display: flex;
+  }
+  .main-content .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+  }
+  .box h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #000;
+  }
+  
+  .left .content p{
+	text-align: justify;
+	color: #000;
+	font-weight: bold;
+	font-size: 48px;
+  }
+  .left .content .social{
+	margin: 20px 0 0 0;
+  }
+  .left .content .social a{
+	padding: 0 2px;
+  }
+  .left .content .social a span{
+	height: 40px;
+	width: 40px;
+	background: #fff;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: 0.3s;
+	border: 1px solid #000;
+  }
+  .left .content .social a span:hover{
+	background: #f12020;
+  }
+  .center .content .fas{
+	font-size: 1.4375rem;
+	background: #fff;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	transition: 0.3s;
+	cursor: pointer;
+	border: 1px solid #000;
+	
+  }
+  .center .content .fas:hover{
+	background: #f12020;
+  }
+  .center .content .text{
+	font-size: 1.0625rem;
+	font-weight: 500;
+	padding-left: 10px;
+	color: #000;
+  }
+  .center .content .phone{
+	margin: 15px 0;
+  }
+  .right form .text{
+	font-size: 1.0625rem;
+	margin-bottom: 2px;
+	color: #000;
+  }
+  .right form .msg{
+	margin-top: 10px;
+  }
+  .right form input, .right form textarea{
+	width: 100%;
+	font-size: 1.0625rem;
+	background: #fff;
+	padding-left: 10px;
+	border: 2px solid #222222;
+  }
+  .right form input:focus,
+  .right form textarea:focus{
+	outline-color: #3498db;
+  }
+  .right form input{
+	height: 35px;
+  }
+  .right form .btn{
+	margin-top: 10px;
+  }
+  .right form .btn button{
+	height: 40px;
+	width: 100%;
+	border: none;
+	outline: none;
+	background: #f12020;
+	font-size: 1.0625rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: .3s;
+  }
+  .right form .btn button:hover{
+	background: #000;
+  }
+  .bottom center{
+	padding: 5px;
+	font-size: 0.9375rem;
+	background: #fff;
+	border: 2px solid #000000; 
+	color: #000;
+  }
+  .bottom center span{
+	color: #656565;
+  }
+  .bottom center a{
+	color: #f12020;
+	text-decoration: none;
+  }
+  .bottom center a:hover{
+	text-decoration: underline;
+  }
+  @media screen and (max-width: 900px) {
+	footer{
+	  position: relative;
+	  bottom: 0px;
+	}
+	.main-content{
+	  flex-wrap: wrap;
+	  flex-direction: column;
+	}
+	.main-content .box{
+	  margin: 5px 0;
+	}
+  }

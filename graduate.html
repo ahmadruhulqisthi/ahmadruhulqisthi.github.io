@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/graduate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Database for Alumnus</div>
+    <div class="content">
+      <form name="submit-to-google-sheet">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" name="Fullname" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your email" name="Email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Date of Birth (dd/mm/yyyy)</span>
+            <input type="text" placeholder="Enter your date of birth" name="DateOfBirth" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="number" placeholder="Enter your number" name="PhoneNumber" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Home Adress</span>
+            <input type="text" placeholder="Enter your home address" name="HomeAdress" required>
+          </div>
+          <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" placeholder="enter your city" name="City" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Entrance Year in LUCT</span>
+            <input type="number" placeholder="enter your entrance year" name="EntranceYearInLUCT" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Graduation/Transfer Year </span>
+            <input type="number" placeholder="enter your graduation/transfer year" name="GraduationOrTransferYear" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Course</span>
+            <input type="text" placeholder="enter your course" name="Course" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Academic Qualification (Diploma/Degree of Programme)</span>
+            <input type="text" placeholder="" name="AcademicQualification" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Name of School Diploma/Degree</span>
+            <input type="text" placeholder="" name="NameOfSchoolDiplomaOrDegree" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Academic Qualification (Post Graduate Name of Programme)</span>
+            <input type="text" placeholder="" name="AcademicQualificationPostGraduate">
+          </div>
+          <div class="input-box">
+            <span class="details">Name of School Post Graduate</span>
+            <input type="text" placeholder="" name="NameOfSchoolPostGraduate">
+          </div>
+
+          <div class="input-box">
+            <span class="details">Current Working Company</span>
+            <input type="text" placeholder="enter your current working company" name="CurrentWorkingCompany" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Tell Us More about Your Current Job</span>
+            <input type="text" name="TellUsMoreAboutYourCurrentJob" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Working Experience 1 (Year/Company/Position)</span>
+            <input type="text" placeholder="enter your working experience" name="WorkingExperience1" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Working Experience 2 (Year/Company/Position)</span>
+            <input type="text" placeholder="enter your working experience" name="WorkingExperience2" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Working Experience 3 (Year/Company/Position)</span>
+            <input type="text" placeholder="enter your working experience" name="WorkingExperience3">
+          </div>
+          <div class="input-box">
+            <span class="details">Achievement & Affiliations 1 (Year/Company/Position)</span>
+            <input type="text" placeholder="enter your achievement & affiliations" name="Achievement&Affiliations1">
+          </div>
+          <div class="input-box">
+            <span class="details">Achievement & Affiliations 2 (Year/Company/Position)</span>
+            <input type="text" placeholder="enter your achievement & affiliations" name="Achievement&Affiliations2">
+          </div>
+          <div class="input-box">
+            <span class="details">Achievement & Affiliations 3 (Year/Company/Position)</span>
+            <input type="text" placeholder="enter your achievement & affiliations" name="Achievement&Affiliations3">
+          </div>
+          <div class="input-box">
+            <span class="details">Your Most Memorable Moment at LUCT</span>
+            <input type="text" name="YourMostMemorableMomentAtLUCT" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Your Suggestion for Indonesian Limkokwing Alumnus</span>
+            <input type="text" name="YourSuggestionForIndonesianLimkokwingAlumnus" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxeqe1AhCHrz49oq1qe3AZk5xrvC85Tc_BnuH7mbWZMM71xuuVLwT4S_nuAmCHZmdUz-g/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>

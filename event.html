@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merah Putih Club </title>
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <header>
+      <div class="navbar">
+        <nav class="navbar navbar-default color-fill navbar-fixed-top">
+          <div class="col-md-12">
+             <div class="nav">
+                <button class="btn-nav">
+                <span class="icon-bar top"></span>
+                <span class="icon-bar middle"></span>
+                <span class="icon-bar bottom"></span>
+                </button>
+             </div>
+             <a class="navbar-brand" href="home.html">
+             <img class="logo" src="img/mpc.png" alt="logo">
+             </a>
+             <div class="nav-content hideNav hidden">
+                <ul class="nav-list vcenter">
+                   <li class="nav-item"><a class="item-anchor" href="home.html">Home</a></li>
+                   <li class="nav-item"><a class="item-anchor" href="about.html">About Us</a></li>
+                   <li class="nav-item"><a class="item-anchor" href="event.html">Our Event</a></li>
+                   <li class="nav-item"><a class="item-anchor" href="blog.html">Information</a></li>
+                </ul>
+             </div>
+          </div>
+       </nav>
+      </div>
+        <div class="container">
+          <video src="vid/culture festival.mp4" class="slider" autoplay loop muted controls></video>
+          <ul>
+              <li onclick="videoslider('vid/culture festival.mp4')"><video src="vid/culture festival.mp4"></video></li>
+              <li onclick="videoslider('vid/monophone 2019.mp4')"><video src="vid/monophone 2019.mp4"></video></li>
+              <li onclick="videoslider('vid/serabi 2018.mp4')"><video src="vid/serabi 2018.mp4"></video></li>
+              <li onclick="videoslider('vid/makrab.mp4')"><video src="vid/makrab.mp4"></video></li>
+          </ul>
+      </div>
+      <script>
+          function videoslider(links){
+              document.querySelector(".slider").src = links;
+          }
+      </script>
+      <script src="js/jquery.js"></script>
+      <script src="js/script.js"></script>
+    </header>
+</body>
+</html>

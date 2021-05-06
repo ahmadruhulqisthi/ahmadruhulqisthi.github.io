@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Merah Putih Club</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <nav class="navbar navbar-default color-fill navbar-fixed-top">
+        <div class="col-md-12">
+           <div class="nav">
+              <button class="btn-nav">
+              <span class="icon-bar top"></span>
+              <span class="icon-bar middle"></span>
+              <span class="icon-bar bottom"></span>
+              </button>
+           </div>
+           <a class="navbar-brand" href="home.html">
+           <img class="logo" src="img/mpc.png" alt="logo">
+           </a>
+           <div class="nav-content hideNav hidden">
+              <ul class="nav-list vcenter">
+                 <li class="nav-item"><a class="item-anchor" href="home.html">Home</a></li>
+                 <li class="nav-item"><a class="item-anchor" href="about.html">About Us</a></li>
+                 <li class="nav-item"><a class="item-anchor" href="event.html">Our Event</a></li>
+                 <li class="nav-item"><a class="item-anchor" href="blog.html">Information</a></li>
+              </ul>
+           </div>
+        </div>
+     </nav>
+    </div>
+    <video src="video (4).mp4" class="vid-bg" autoplay loop muted></video>
+    <div class="banner-text">
+      <h2>Meet</h2>
+      <h3>each other,</h3>
+      <h2>Collaborate,</h2>
+      <h2>Be Creative.</h2>
+      <a href="#slide2" class="btn btn-skin" id="btn-scroll">Start here</a>
+    </div> 
+    <script type="text/javascript">
+      let video = document.querySelector('video');
+      window.addEventListener('scroll', function(){
+        let value = 1 + window.scrollY/ -600;
+        video.style.opacity = value;
+      })
+    </script>
+  </header>
+  <div id="slide2" class="slide2">
+      <img src="img/limkokwing logo.png" alt="limkokwing.png">
+      <h3>
+        Merah Putih Club is an organization catered to Indonesians studying 
+        at Limkokwing University of Creative Technology to unite all Indonesian students.
+      </h3>
+      <p>explore your hobby and skills at one place</p>
+  </div>
+    <section class="home">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-controls">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active" style="background-image:url('img/TOA\ Logo.png')"></li>
+          <li data-target="#carousel" data-slide-to="1" style="background-image:url('img/Lubang\ Buaya\ Logo\ Final\ 2-05.jpg')"></li>
+          <li data-target="#carousel" data-slide-to="2" style="background-image:url('img/cyber\ valey.jpeg')"></li>
+          <li data-target="#carousel" data-slide-to="3" style="background-image:url('img/Gema\ Logo.jpeg')"></li>
+          <li data-target="#carousel" data-slide-to="4" style="background-image:url('img/INDOMI_transparant\ 1.png')"></li>
+          <li data-target="#carousel" data-slide-to="5" style="background-image:url('img/Selendang\ Logo.jpeg')"></li>
+          <li data-target="#carousel" data-slide-to="6" style="background-image:url('img/Bingkai.jpeg')"></li>
+          <li data-target="#carousel" data-slide-to="7" style="background-image:url('img/cyber\ valey.jpeg')"></li>
+        </ol>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <img src="img/left-arrow.svg" alt="Prev"> 
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <img src="img/right-arrow.svg" alt="Next">
+        </a>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image:url('img/TehOAis.JPG')">
+          <div class="container">
+            <h2>Teh O Ais</h2>
+            <p>- Video Production Club -</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('img/LubangBuaya.png')">
+          <div class="container">
+            <h2>Lubang Buaya</h2>
+            <p>- Futsal Club -</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('img/CyberValley.png')">
+          <div class="container">
+            <h2>Cyber Valley</h2>
+            <p>- Basketball Club -</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('img/Gema.png')">
+          <div class="container">
+            <h2>Gema</h2>
+            <p>- Music Club -</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('img/Indomi.jpg')">
+          <div class="container">
+            <h2>INDOMI</h2>
+            <p>- Gaming Club -</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('img/Selendang.png')">
+          <div class="container">
+            <h2>Selendang</h2>
+            <p>- Dance Club -</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('img/Group\ 1.png')">
+          <div class="container">
+            <h2>Bingkai</h2>
+            <p>- Photography Club -</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('img/Raket.png')">
+          <div class="container">
+            <h2>Raket</h2>
+            <p>- Badminton Club -</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <div class="slide4">
+    <p>What are you looking for?</p>
+    <hr>
+    <h5>No.1</h5>
+    <a target="_blank" href="http://bit.ly/ysfupm2021booklet">Youth Speak Forum 2021 Booklet</a>
+    <hr>
+    <h5>No.2</h5>
+    <a target="_blank" href="https://drive.google.com/file/d/1c8zwF6TzNaJNAwMPD_NJAku-akG_N_XV/view">Campus Announcement</a>
+    <hr>
+    <h5>No.3</h5>
+    <a target="_blank" href="https://forms.gle/kJFPmAEBjkJ8ZT729">Undergraduate Database</a>
+    <hr>
+    <h5>No.4</h5>
+    <a target="_blank" href="graduate.html">Graduated Database</a>
+    <br>
+    <p>Informations</p>
+    <hr>
+  </div>
+  <section class="blog" id = "blog">
+    <div class="container">
+      <div class = "blog-content">
+        <!-- item -->
+        <div class = "blog-item">
+          <div class = "blog-img">
+            <img src = "img/aiesecinupm.jpg" alt = "">
+          </div>
+          <div class = "blog-text">
+            <span>20 January, 2020</span>
+            <h2>Youth Speak Forum 2021 #AIESECinUPM</h2>
+            <p>Youth Speak Forum is an event organized by AIESEC that takes place in multiple locations around the world, bringing top young leaders together with business leaders...</p>
+            <a href = "information.html">Read More</a>
+          </div>
+        </div>
+        <!-- end of item -->
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="main-content">
+      <div class="left box">
+        <div class="content">
+          <img src="img/mpc.png" alt="mpclogoo.png">
+          <p>Keep in Touch</p>
+          <div class="social">
+            <a target="_blank" href="https://facebook.com/merahputihluct"><span class="fab fa-facebook-f"></span></a>
+            <a target="_blank" href="https://twitter.com/merahputihluct"><span class="fab fa-twitter"></span></a>
+            <a target="_blank" href="https://www.instagram.com/merahputihluct/"><span class="fab fa-instagram"></span></a>
+            <a target="_blank" href="https://www.youtube.com/user/merahputihLUCT"><span class="fab fa-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="center box">
+        <h2>Address</h2>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="text1">Inovasi 1, 1, Jalan Teknokrat 1/1, 
+              Cyberjaya, 63000 Cyberjaya</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text1">+60 11 2175 5223</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text1">merahputihclub.luct@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right box">
+        <h2>Contact us</h2>
+        <div class="content">
+          <form name="contact-us-form">
+            <div class="name">
+              <div class="text">Name *</div>
+              <input type="text" name="name" required>
+            </div>
+            <div class="email">
+              <div class="text">Email *</div>
+              <input type="email" name="email" required>
+            </div>
+            <div class="msg">
+              <div class="text">Message *</div>
+              <input type="text" name="message" required>
+            </div>
+            <div class="button">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <center>
+       Merah Putih Club ©2021 All rights reserved
+      </center>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwyG6Fkx8MvfFdRavVxbYZnUIn-ptRZkJm5A0GmcUnb54TdZGYDafS-3p1ZWGaSx6Q7/exec'
+    const form = document.forms['contact-us-form']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
